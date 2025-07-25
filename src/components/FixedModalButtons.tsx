@@ -27,7 +27,7 @@ export default function FixedModalButtons() {
           className="flex items-center gap-2 bg-orange-600 hover:bg-black transition-all duration-500 text-white px-4 py-2 rounded-l-full shadow-md  -right-4/6 hover:right-0 relative"
         >
           <Image src="/message-circle.svg" alt="Talk" width={20} height={20} />
-          Let's Talk
+          Let&#39;s Talk
         </button>
 
         <button

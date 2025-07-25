@@ -40,7 +40,7 @@ export default function WealthManagementPage() {
             <span className="text-orange-500">Unsecured Business</span> Loans
           </h2>
           <p>
-            These loans do not require collateral and are granted based on the borrower's
+            These loans do not require collateral and are granted based on the borrower&#39;s
             creditworthiness. Since they pose a higher risk to lenders, they typically require a
             strong credit score and financial history.
           </p>
@@ -52,7 +52,7 @@ export default function WealthManagementPage() {
             <span className="text-orange-500">Working Capital</span> Facilities
           </h2>
           <p>
-            This loan or overdraft is used to finance a company's daily operations. It helps
+            This loan or overdraft is used to finance a company&#39;s daily operations. It helps
             businesses manage short-term cash flow needs rather than funding long-term assets or
             investments.
           </p>
@@ -89,7 +89,7 @@ export default function WealthManagementPage() {
           </h2>
           <p className="mb-4">
             Funding the invoice amount and purchase orders with a value guarantee, without interest.
-            It is considered a way to maintain the companies' liquidity so that the fund finances
+            It is considered a way to maintain the companies&#39; liquidity so that the fund finances
             the value of the invoice or purchase order until the receipt of the goods or service or
             collection, and the payment is through single bullet payment/installments without any
             interest according to the term of the contract mentioned in the invoice or purchase
@@ -111,7 +111,7 @@ export default function WealthManagementPage() {
             </li>
             <li>
               Submitting single/multiple installment checks + a security check for the finance
-              amount (according to the fund's policy).
+              amount (according to the fund&#39;s policy).
             </li>
             <li>
               Signing an agreement with the institution in the presence of a notary public.
@@ -178,7 +178,7 @@ export default function WealthManagementPage() {
       </div>
       <aside className="w-full lg:w-1/4 mt-10 lg:mt-0 sticky-sidebar relative lg:sticky top-0 h-fit">
           <h2 className="text-2xl font-semibold mb-3 mt-4">
-            Let's <span className="text-primary text-[hsla(27,99%,49%)]">Talk</span>
+            Let&#39;s <span className="text-primary text-[hsla(27,99%,49%)]">Talk</span>
           </h2>
           <p className="mb-6 text-sm">
             Are you looking for tailor-made investment solutions?... Get in touch with one of our experts.

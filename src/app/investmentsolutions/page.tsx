@@ -24,14 +24,14 @@ export default function WealthManagementPage() {
       <div className="container mx-auto px-4 lg:px-16 py-12">
         <section id="portfoliomanagement" className="mb-12">
           <h2 className="mb-4 text-3xl font-semibold"><span className="text-orange-500">Portfolio</span> Management</h2>
-          <p>At Aratica, we construct portfolios based on our client's goals, risk appetite, personal and tax circumstances. Our portfolio managers offer both discretionary and advisory investment services.</p>
+          <p>At Aratica, we construct portfolios based on our client&#39;s goals, risk appetite, personal and tax circumstances. Our portfolio managers offer both discretionary and advisory investment services.</p>
           <p>With our discretionary offering, we invest on behalf of our clients. We draw on proven market expertise to help our clients achieve their financial goals. Our advisory solutions give our clients a two-way relationship with a dedicated banker who liaises with our investment experts. This investment service enables you to be in control but not alone.</p>
-          <p>Discover our "Empowering investors" video series.</p>
+          <p>Discover our &#34;Empowering investors&#34; video series.</p>
         </section>
 
         <section id="privateassets" className="mb-12">
           <h2 className="mb-4 text-3xl font-semibold"><span className="text-orange-500">Private</span> Assets</h2>
-          <p>We see many reasons to include private assets as part of a well diversified, long-term investment strategy. The benefits can include enhanced returns versus public markets, reduced volatility given lower exposure to short-term market movements, and greater portfolio diversification. Private assets are best suited to investors who can place capital for the long run and tolerate illiquidity. We favour a multi-year investment strategy across private asset classes, combined with traditional liquid assets as part of our "total wealth" approach.</p>
+          <p>We see many reasons to include private assets as part of a well diversified, long-term investment strategy. The benefits can include enhanced returns versus public markets, reduced volatility given lower exposure to short-term market movements, and greater portfolio diversification. Private assets are best suited to investors who can place capital for the long run and tolerate illiquidity. We favour a multi-year investment strategy across private asset classes, combined with traditional liquid assets as part of our &#34;total wealth&#34; approach.</p>
         </section>
 
         <section id="Equity" className="mb-12">
@@ -46,13 +46,13 @@ export default function WealthManagementPage() {
 
         <section id="fundselection" className="mb-12">
           <h2 className="mb-4 text-3xl font-semibold"><span className="text-orange-500">Fund</span> Selection</h2>
-          <p>We strive to offer our clients the best fund investment ideas on the market, whether from us or other firms, spanning active and passive instruments. Our open architecture team identifies best-in-class fund managers with the expertise to run customised strategies that meet our client's portfolio needs.</p>
+          <p>We strive to offer our clients the best fund investment ideas on the market, whether from us or other firms, spanning active and passive instruments. Our open architecture team identifies best-in-class fund managers with the expertise to run customised strategies that meet our client&#39;s portfolio needs.</p>
           <p>Our open architecture team selects the best strategies to meet investors needs. To this end, we have launched the “Privil Edge” fund platform, which allows us to partner with leading external managers on differentiated strategies through a wide range of funds in a UCITS (Undertakings for the Collective Investment in Transferable Securities) format, in different share classes to suit investors registration and reporting requirements.</p>
         </section>
       </div>
       <aside className="w-full lg:w-1/4 mt-10 lg:mt-0 sticky-sidebar relative lg:sticky top-0 h-fit">
           <h2 className="text-2xl font-semibold mb-3 mt-4">
-            Let's <span className="text-primary text-[hsla(27,99%,49%)]">Talk</span>
+            Let&#39;s <span className="text-primary text-[hsla(27,99%,49%)]">Talk</span>
           </h2>
           <p className="mb-6 text-sm">
             Are you looking for tailor-made investment solutions?... Get in touch with one of our experts.

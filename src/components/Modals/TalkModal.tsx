@@ -7,7 +7,7 @@ export default function TalkModal({ onClose }: { onClose: () => void }) {
         <button className="absolute top-2 right-3 text-xl font-bold" onClick={onClose}>
           &times;
         </button>
-        <h5 className="text-lg font-semibold mb-4">Let's <span className="text-orange-500">talk.</span></h5>
+        <h5 className="text-lg font-semibold mb-4">Let&#39;s <span className="text-orange-500">talk.</span></h5>
 
         <form className="space-y-4">
           <select className="w-full border px-3 py-2" required>
@@ -40,7 +40,7 @@ export default function TalkModal({ onClose }: { onClose: () => void }) {
           <textarea className="w-full border px-3 py-2" rows={4} placeholder="Your message"></textarea>
 
           <label className="flex items-center gap-2 text-sm">
-            <input type="checkbox" /> I'm not a US resident or citizen
+            <input type="checkbox" /> I&#39;m not a US resident or citizen
           </label>
           <label className="flex items-center gap-2 text-sm">
             <input type="checkbox" /> I would also like to subscribe to your newsletter

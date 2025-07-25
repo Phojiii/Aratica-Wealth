@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import PageHeader from '@/components/PageHeader';
 import ContactSection from '@/components/ContactSection';
 import SocialIcons from '@/components/SocialIcons';
@@ -21,15 +20,14 @@ export default function WealthPlanningPage() {
             <section>
               <h2 className="mb-4 text-3xl font-semibold"><span className="text-orange-500">Wealth</span> Planning</h2>
               <p className="mb-4">
-                At Aratica Wealth, managing wealth is not just about building a portfolio—it's about understanding the full picture. We take a comprehensive, forward-thinking approach that is both global in perspective and deeply personalized to your life.
+                At Aratica Wealth, managing wealth is not just about building a portfolio—it&#39;s about understanding the full picture. We take a comprehensive, forward-thinking approach that is both global in perspective and deeply personalized to your life.
               </p>
               <p className="mb-4">Our process begins by getting to know you—your family, your career, and your long-term goals. We take the time to assess your complete financial landscape so we can design solutions that are aligned with your personal circumstances, tax considerations, and country of residence.</p>
-              <p className="mb-4">We go beyond day-to-day investment decisions. Whether you're preparing to sell a business, planning a major life event, or thinking about generational wealth transfer, we help you structure your assets with foresight and flexibility—always ensuring that those who matter most to you are protected.</p>
-              <p className="mb-4">At Aratica Wealth, we don't just manage capital—we help you shape a lasting legacy.</p>
-
+              <p className="mb-4">We go beyond day-to-day investment decisions. Whether you&#39;re preparing to sell a business, planning a major life event, or thinking about generational wealth transfer, we help you structure your assets with foresight and flexibility—always ensuring that those who matter most to you are protected.</p>
+              <p className="mb-4">At Aratica Wealth, we don&#39;t just manage capital—we help you shape a lasting legacy.</p>
               <p className="italic border-y-2 border-dashed border-gray-700 py-6 text-center max-w-3xl mx-auto text-sm md:text-base">
-                <span className="text-3xl text-orange-500">"</span>Our wealth planners are dedicated exclusively to the service of our clients
-                <span className="text-3xl text-orange-500">"</span>
+                <span className="text-3xl text-orange-500">&#34;</span>Our wealth planners are dedicated exclusively to the service of our clients
+                <span className="text-3xl text-orange-500">&#34;</span>
               </p>
 
               {/* First Row */}
@@ -43,11 +41,11 @@ export default function WealthPlanningPage() {
 
                     <h4 className="text-xl font-semibold"><span className="text-orange-500">Family</span> Governance</h4>
                     <p>At Aratica Wealth, we understand the complexities that come with managing family wealth across generations. As a privately held, independent firm, we share the entrepreneurial spirit of the families we serve. Supporting families in structuring, preserving, and passing on their wealth is at the heart of what we do.</p>
-                    <p>We offer dedicated guidance and educational seminars on key issues facing family-run enterprises—such as governance frameworks, succession strategies, and intergenerational planning—helping you build clarity, cohesion, and continuity across your family's legacy.</p>
+                    <p>We offer dedicated guidance and educational seminars on key issues facing family-run enterprises—such as governance frameworks, succession strategies, and intergenerational planning—helping you build clarity, cohesion, and continuity across your family&#39;s legacy.</p>
 
                     <h4 className="text-xl font-semibold"><span>Inheritance</span> & <span className="text-orange-500">Succession</span> Planning</h4>
-                    <p>Passing on wealth is more than a transaction—it's a deeply personal transition. At Aratica Wealth, we help you plan for the future with care, foresight, and precision.</p>
-                    <p>Whether you're arranging lifetime gifts, defining testamentary wishes, or selecting the most appropriate succession planning vehicles, we work to ensure that your wealth is aligned with your objectives while fully addressing the legal, tax, and cross-border implications involved. Our goal is to give you peace of mind—knowing that what you've built will be passed on exactly as you intend.</p>
+                    <p>Passing on wealth is more than a transaction—it&#39;s a deeply personal transition. At Aratica Wealth, we help you plan for the future with care, foresight, and precision.</p>
+                    <p>Whether you&#39;re arranging lifetime gifts, defining testamentary wishes, or selecting the most appropriate succession planning vehicles, we work to ensure that your wealth is aligned with your objectives while fully addressing the legal, tax, and cross-border implications involved. Our goal is to give you peace of mind—knowing that what you&#39;ve built will be passed on exactly as you intend.</p>
                   </div>
                   <div className="w-full md:w-1/2 sticky top-5 h-fit">
                     <Image src="/wealth-planning-image.webp" alt="Wealth Planning" width={500} height={500} className="mx-auto" />
@@ -57,8 +55,8 @@ export default function WealthPlanningPage() {
 
               {/* Second Quote */}
               <p className="italic border-y-2 border-dashed border-gray-700 py-6 text-center max-w-3xl mx-auto text-sm md:text-base">
-                <span className="text-3xl text-orange-500">"</span>We help you to ensure a smooth transition of wealth from one generation to the next
-                <span className="text-3xl text-orange-500">"</span>
+                <span className="text-3xl text-orange-500">&#34;</span>We help you to ensure a smooth transition of wealth from one generation to the next
+                <span className="text-3xl text-orange-500">&#34;</span>
               </p>
 
               {/* Second Row */}
@@ -78,7 +76,7 @@ export default function WealthPlanningPage() {
                     <h4 className="text-xl font-semibold"><span className="text-orange-500">Real Estate</span> Advisory</h4>
                     <p>From acquisition to sale, we provide legal and tax advice to help you optimize your real estate transactions. Our team assesses key issues such as funding strategies, ownership structures (direct or indirect), and co-ownership arrangements—ensuring your property decisions are both efficient and aligned with your overall wealth plan.</p>
                     <h4 className="text-xl font-semibold"><span className="text-orange-500">Philanthropy</span> Planning</h4>
-                    <p>At Aratica Wealth, we support your desire to make a meaningful impact. Whether you're launching your own charitable initiative, establishing a foundation, or exploring structured giving strategies, our advisors provide the global insight and governance expertise you need. We work with philanthropists at every stage to align their giving with personal values and long-term legacy goals.</p>
+                    <p>At Aratica Wealth, we support your desire to make a meaningful impact. Whether you&#39;re launching your own charitable initiative, establishing a foundation, or exploring structured giving strategies, our advisors provide the global insight and governance expertise you need. We work with philanthropists at every stage to align their giving with personal values and long-term legacy goals.</p>
                   </div>
                   <div className="w-full md:w-1/2 sticky top-5 h-fit">
                     <Image src="/CP-WP-PensionProvision_LOcom.webp" alt="Pension Provision" width={500} height={500} className="mx-auto" />
@@ -90,7 +88,7 @@ export default function WealthPlanningPage() {
 
           {/* Sticky Sidebar */}
           <div className="w-full lg:w-3/12 mt-8 lg:mt-0 lg:pl-6 sticky top-0 h-fit">
-            <h2 className="text-2xl font-semibold mt-4">Let's <span className="text-orange-500">Talk</span></h2>
+            <h2 className="text-2xl font-semibold mt-4">Let&#39;s <span className="text-orange-500">Talk</span></h2>
             <p className="mt-2 mb-4 text-sm">Are you looking for tailor-made investment solutions? Or are you interested in market perspectives? Get in touch with one of our experts.</p>
             <button type="button" className="btn">Contact Us</button>
 

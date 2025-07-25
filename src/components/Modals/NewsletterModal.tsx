@@ -32,7 +32,7 @@ export default function NewsletterModal({ onClose }: { onClose: () => void }) {
             </select>
             <label className="flex items-center gap-2 text-sm">
               <input type="checkbox" />
-              I'm not a US resident or citizen
+              I&#39;m not a US resident or citizen
             </label>
           </div>
 

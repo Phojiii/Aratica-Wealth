@@ -1,4 +1,5 @@
 'use client';
+import Image from "next/image";
 
 export default function ShareModal({ onClose }: { onClose: () => void }) {
   return (
@@ -10,13 +11,13 @@ export default function ShareModal({ onClose }: { onClose: () => void }) {
         <h5 className="text-lg font-semibold mb-4">Share<span className="text-orange-500">.</span></h5>
         <div className="flex justify-center gap-6">
           <a href="#" target="_blank" title="LinkedIn">
-            <img src="../linkedin.svg" alt="LinkedIn" className="w-12 h-12 bg-sky-800 p-1 rounded-lg" />
+            <Image src="/linkedin.svg" alt="LinkedIn" width={12} height={12} className="bg-sky-800 p-1 rounded-lg" />
           </a>
           <a href="#" target="_blank" title="Twitter (X)">
-            <img src="../twitter.svg" alt="X" className="w-12 h-12 bg-gray-500 p-1 rounded-lg" />
+            <Image src="/twitter.svg" alt="X" width={12} height={12} className="bg-gray-500 p-1 rounded-lg" />
           </a>
           <a href="mailto:?subject=Check this out!" title="Email">
-            <img src="./mail.svg" alt="Email" className="w-12 h-12 bg-cyan-700 p-1 rounded-lg" />
+            <Image src="/mail.svg" alt="Email" width={12} height={12} className="bg-cyan-700 p-1 rounded-lg" />
           </a>
         </div>
       </div>

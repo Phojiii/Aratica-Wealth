@@ -29,16 +29,16 @@ export default function WealthManagementPage() {
               <span className="text-primary text-[hsla(27,99%,49%)]">Wealth</span> Management
             </h2>
             <p className="mb-4">
-              At Aratica Wealth, we are dedicated to helping our clients preserve, grow, and seamlessly transfer their wealth across generations. As a partner-led firm, our leadership is actively engaged in delivering personalized wealth management solutions tailored to each client's unique goals and circumstances.
+              At Aratica Wealth, we are dedicated to helping our clients preserve, grow, and seamlessly transfer their wealth across generations. As a partner-led firm, our leadership is actively engaged in delivering personalized wealth management solutions tailored to each client&#39;s unique goals and circumstances.
             </p>
             <p className="mb-8">
-              In a landscape where many institutions rely on standardized financial planning, we take pride in our client-first approach — offering bespoke strategies built on trust, long-term relationships, and a deep understanding of individual aspirations. At Aratica, wealth management is more than numbers — it's about building legacies with care, integrity, and strategic vision.
+              In a landscape where many institutions rely on standardized financial planning, we take pride in our client-first approach — offering bespoke strategies built on trust, long-term relationships, and a deep understanding of individual aspirations. At Aratica, wealth management is more than numbers — it&#39;s about building legacies with care, integrity, and strategic vision.
             </p>
 
             <blockquote className="qoute text-center italic border-y-2 border-y-gray-900 border-dashed py-6 my-10 max-w-3xl mx-auto">
               <p className="text-lg">
-                <span className="text-3xl text-primary text-[hsla(27,99%,49%)]">"</span>We are convinced that sustainability will be a major performance driver...
-                <span className="text-3xl text-primary text-[hsla(27,99%,49%)]">"</span>
+                <span className="text-3xl text-primary text-[hsla(27,99%,49%)]">&#34;</span>We are convinced that sustainability will be a major performance driver over the coming years and we want to help our clients benefit from this trend
+                <span className="text-3xl text-primary text-[hsla(27,99%,49%)]">&#34;</span>
               </p>
               <span className="text-primary font-medium block mt-2 text-[hsla(27,99%,49%)]">- Senior Managing Partner</span>
             </blockquote>
@@ -68,7 +68,7 @@ export default function WealthManagementPage() {
             <h4 className="text-xl font-semibold mb-4">
               Your <span className="text-primary text-[hsla(27,99%,49%)]">Wealth</span>. Your <span className="text-primary text-[hsla(27,99%,49%)]">Vision</span>. Our <span className="text-primary text-[hsla(27,99%,49%)]">Strategy</span>.
             </h4>
-            <p className="mb-4">At Aratica Wealth, we take a progressive and highly personalized approach to wealth management—designed around your life, your priorities, and your future. We understand that your wealth serves multiple purposes: supporting your lifestyle today, funding long-term ambitions, and securing your family's tomorrow.</p>
+            <p className="mb-4">At Aratica Wealth, we take a progressive and highly personalized approach to wealth management—designed around your life, your priorities, and your future. We understand that your wealth serves multiple purposes: supporting your lifestyle today, funding long-term ambitions, and securing your family&#39;s tomorrow.</p>
             <p className="mb-4">Rather than relying on a one-size-fits-all investment portfolio, we create a series of dedicated portfolios—each aligned to a specific financial goal. Every portfolio is crafted with a unique time horizon, asset allocation strategy, and independent risk profile to ensure it meets its intended purpose effectively.</p>
             <p className="mb-8">Your preferences, values, and constraints shape each investment decision, while overall risk and asset allocation are managed holistically across your entire wealth structure. This goal-based, forward-looking strategy ensures clarity, control, and confidence—every step of the way.</p>
 
@@ -85,7 +85,7 @@ export default function WealthManagementPage() {
             <p className="mb-4">At Aratica Wealth, we believe true wealth management goes far beyond simply constructing a portfolio. It starts with a deep understanding of your life—your ambitions, your responsibilities, and the legacy you wish to build.</p>
             <p className="mb-4">Our approach is both global and highly personal. We begin by getting to know you—your family dynamics, professional journey, lifestyle, and future aspirations. This relationship-driven foundation allows us to design bespoke, long-term strategies tailored to your financial goals and evolving needs.</p>
             <p className="mb-4">Our experienced wealth planners conduct thorough diagnostics that consider every aspect of your life, from career plans to family commitments, business ventures to retirement objectives. By aligning your wealth strategy with your personal circumstances, tax considerations, and country of residence, we ensure your wealth is managed with precision, foresight, and flexibility.</p>
-            <p className="mb-12">At Aratica, we don't just manage wealth—we help you shape your future.</p>
+            <p className="mb-12">At Aratica, we don&#39;t just manage wealth—we help you shape your future.</p>
 
             <Image
               src="/WealthManagement_ArticleLOcom-Topic1.webp"
@@ -99,7 +99,7 @@ export default function WealthManagementPage() {
 
         <aside className="w-full lg:w-1/4 mt-10 lg:mt-0 sticky-sidebar relative lg:sticky top-0 h-fit">
           <h2 className="text-2xl font-semibold mb-3 mt-4">
-            Let's <span className="text-primary text-[hsla(27,99%,49%)]">Talk</span>
+            Let&#39;s <span className="text-primary text-[hsla(27,99%,49%)]">Talk</span>
           </h2>
           <p className="mb-6 text-sm">
             Are you looking for tailor-made investment solutions?... Get in touch with one of our experts.

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 const clients = [
   { src: '/sevengate.webp', alt: 'Seven Gate' },
@@ -19,7 +20,7 @@ export default function ClientsSection() {
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 items-center justify-items-center">
           {clients.map((client, index) => (
-            <img
+            <Image
               key={index}
               src={client.src}
               alt={client.alt}

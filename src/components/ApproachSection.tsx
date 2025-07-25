@@ -22,7 +22,7 @@ const OurApproachSection = () => {
               At a time when many are opting for standardised offerings within private banking, we believe in personal relationships and bespoke investment solutions, powered by cutting-edge technology. This is our strength, we are bespoke solution providers, we are advisors not sellers.
             </p>
             <p className="mb-4">
-              In our view, private banking is about helping our clients achieve their goals and realise their dreams. Are they thinking of moving abroad? Are they going to sell their company? Are they looking to retire early? Based on our client's goals, we reassess their wealth architecture and make adjustments over time to preserve and grow their assets for the future. We operate with a long-term perspective, ensuring stability and continuity, and we deeply value the trust our clients place in us, many of whom have been with us for many generations.
+              In our view, private banking is about helping our clients achieve their goals and realise their dreams. Are they thinking of moving abroad? Are they going to sell their company? Are they looking to retire early? Based on our client&#39;s goals, we reassess their wealth architecture and make adjustments over time to preserve and grow their assets for the future. We operate with a long-term perspective, ensuring stability and continuity, and we deeply value the trust our clients place in us, many of whom have been with us for many generations.
             </p>
           </div>
         )}

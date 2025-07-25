@@ -21,7 +21,7 @@ export default function AboutUsSection() {
             <p>We offer a wide range of financial services, including Equity Release Loans, Unsecured Business Loans, Working Capital Facilities, Trade Finance, Capex Loans, and Expansion Loans. For companies needing liquidity without high costs, we provide interest-free Invoice and Local Purchase Order Loans with funding up to €10 million designed to keep operations smooth while awaiting customer payments or goods delivery.</p>
             <p>Our Credit Loans support national entrepreneurs with high-value funding (€ 1M-3M) through bank guarantees and competitive terms. Additionally, we offer specialized Expansion Loans exclusively for F&B sector growth, helping UAE nationals tap into long-term opportunities.</p>
             <p>Through a transparent and digitized journey at Aratica, applicants receive guidance from initial approval to final disbursement—with a typical processing time of just 48 hours. We value transparency, simplicity, and security, requiring valid trade licenses, a 20% minimum contribution, and proper asset registration to ensure responsible lending.</p>
-            <p>Whether you're starting a new venture or scaling your current business, Aratica is your trusted funding partner. We're not just offering capital, we're building the foundation for your success.</p>
+            <p>Whether you&#39;re starting a new venture or scaling your current business, Aratica is your trusted funding partner. We&#39;re not just offering capital, we&#39;re building the foundation for your success.</p>
             <p><strong>Aratica — Fueling Ambitions. Powering Progress.</strong></p>
           </div>
         )}
