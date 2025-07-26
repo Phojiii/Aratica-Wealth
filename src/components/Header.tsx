@@ -13,7 +13,6 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleBottomBar = () => setIsBottomBarOpen(!isBottomBarOpen);
 
-  // 👇 Define dynamic nav links based on the current pathname
   const bottomNavLinks = (() => {
     if (pathname.includes('/loanandfunding')) {
       return [
@@ -39,7 +38,7 @@ export default function Header() {
       ];
     }
 
-    if (pathname.includes('/investmentsolutions')){
+    if (pathname.includes('/investmentsolutions')) {
       return [
         { href: '#portfoliomanagement', label: 'Portfolio Management' },
         { href: '#privateassets', label: 'Private Assets' },
@@ -49,15 +48,13 @@ export default function Header() {
       ];
     }
 
-    // fallback for other pages (if needed)
     return [];
   })();
 
   return (
-    <header className="main-header text-white">
-      <div className="top-bar flex justify-between items-center p-4 relative z-50 container m-auto">
-        {/* Left Section */}
-        <div className="left flex items-center gap-4">
+    <header className="main-header sticky top-0 bg-black text-white shadow-md z-50 transition-all duration-300">
+      <div className="top-bar flex justify-between items-center p-4 container mx-auto relative">
+        <div className="left flex items-center gap-4 md:w-1/3 w-auto">
           <button id="menuToggle" onClick={toggleMenu}>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24">
               <rect y="4" width="24" height="2" />
@@ -65,22 +62,15 @@ export default function Header() {
               <rect y="18" width="24" height="2" />
             </svg>
           </button>
-
-          <select name="language" className="bg-black text-white border border-white rounded px-2">
-            <option value="English">English</option>
-            <option value="Deutsch">Deutsch</option>
-          </select>
         </div>
 
-        {/* Middle Logo */}
-        <div className="middle">
-          <Link href="/">
+        <div className="middle flex justify-center md:w-1/3 w-full">
+          <Link href="/" className="flex justify-center">
             <Image src="/trasnparent-logo.webp" alt="Logo" width={50} height={50} />
           </Link>
         </div>
 
-        {/* Right Section */}
-        <div className="right flex gap-4">
+        <div className="right flex items-center justify-end gap-4 md:w-1/3 w-auto">
           <button>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 24 24">
               <path d="M10 2a8 8 0 0 1 5.292 13.707l5 5a1 1 0 1 1-1.414 1.414l-5-5A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z" />
@@ -94,7 +84,7 @@ export default function Header() {
         </div>
       </div>
 
-      <hr className="border-gray-900" />
+      <hr className="border-gray-800" />
 
       {/* Slide-in Side Panel */}
       <div className={`fixed top-0 left-0 h-full w-full md:w-md bg-black text-white transform transition-transform duration-300 z-[9999] shadow-lg ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
@@ -103,44 +93,39 @@ export default function Header() {
           <button onClick={toggleMenu} className="text-white text-2xl">&times;</button>
         </div>
         <nav className="flex flex-col p-4 gap-4">
-          <Link href="/" onClick={toggleMenu} className='px-4 py-2 rounded-sm hover:bg-gray-900 hover:text-orange-500 transition-colors duration-300 ease-in-out border-b-2'>Home</Link>
-          <a href="#aboutus" onClick={toggleMenu} className='px-4 py-2 rounded-sm hover:bg-gray-900 hover:text-orange-500 transition-colors duration-300 ease-in-out border-b-2'>About Us</a>
-          <Link href="/loanandfunding" onClick={toggleMenu} className='px-4 py-2 rounded-sm hover:bg-gray-900 hover:text-orange-500 transition-colors duration-300 ease-in-out border-b-2'>Loan & Funding</Link>
-          <Link href="/investmentsolutions" onClick={toggleMenu} className='px-4 py-2 rounded-sm hover:bg-gray-900 hover:text-orange-500 transition-colors duration-300 ease-in-out border-b-2'>Investment Solutions</Link>
-          <a href="#" onClick={toggleMenu} className='px-4 py-2 rounded-sm hover:bg-gray-900 hover:text-orange-500 transition-colors duration-300 ease-in-out border-b-2'>News & Media</a>
-          <a href="#contactus" onClick={toggleMenu} className='px-4 py-2 rounded-sm hover:bg-gray-900 hover:text-orange-500 transition-colors duration-300 ease-in-out border-b-2'>Contact Us</a>
+          <Link href="/" onClick={toggleMenu}>Home</Link>
+          <a href="#aboutus" onClick={toggleMenu}>About Us</a>
+          <Link href="/loanandfunding" onClick={toggleMenu}>Loan & Funding</Link>
+          <Link href="/investmentsolutions" onClick={toggleMenu}>Investment Solutions</Link>
+          <a href="#">News & Media</a>
+          <a href="#contactus" onClick={toggleMenu}>Contact Us</a>
+          <select name="language" className="bg-black text-white border border-white rounded px-2 mt-4">
+            <option value="English">English</option>
+            <option value="Deutsch">Deutsch</option>
+          </select>
         </nav>
       </div>
 
-      {/* Desktop Bottom Navigation */}
       {bottomNavLinks.length > 0 && (
-        <div className="bottom-bar hidden md:flex flex-wrap justify-center gap-4 text-white py-3">
-          {bottomNavLinks.map((item) => (
-            <a key={item.href} href={item.href} className="px-4 py-2 rounded-sm hover:bg-gray-900 hover:text-orange-500 transition-colors duration-300 ease-in-out">
-              {item.label}
-            </a>
-          ))}
-        </div>
-      )}
-
-      {/* Mobile Toggle Button */}
-      {bottomNavLinks.length > 0 && (
-        <button className="bottom-bar-toggle px-4 py-2 bg-black text-white font-semibold w-full md:hidden" onClick={toggleBottomBar}>
-          Menu +
-        </button>
-      )}
-
-      {/* Mobile Bottom Navigation */}
-      {bottomNavLinks.length > 0 && (
-        <div className={`overflow-hidden transition-all duration-300 ease-in-out md:hidden ${isBottomBarOpen ? 'max-h-96 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-4'}`}>
-          <div className="bottom-bar bg-black text-white py-3 px-4 space-y-2">
+        <>
+          <div className="bottom-bar hidden md:flex flex-wrap justify-center gap-4 text-white py-3 bg-black transition-all duration-300">
             {bottomNavLinks.map((item) => (
-              <a key={item.href} href={item.href} className="block">
-                {item.label}
-              </a>
+              <a key={item.href} href={item.href} className="px-4 py-2 hover:text-orange-500 transition-all duration-300 ease-in-out">{item.label}</a>
             ))}
           </div>
-        </div>
+
+          <button className="bottom-bar-toggle px-4 py-2 bg-black text-white w-full md:hidden" onClick={toggleBottomBar}>
+            Menu +
+          </button>
+
+          <div className={`overflow-hidden transition-all duration-300 ease-in-out md:hidden ${isBottomBarOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+            <div className="bottom-bar bg-black text-white py-3 px-4 space-y-2">
+              {bottomNavLinks.map((item) => (
+                <a key={item.href} href={item.href} className="block hover:text-orange-500 transition-colors">{item.label}</a>
+              ))}
+            </div>
+          </div>
+        </>
       )}
     </header>
   );
