@@ -4,18 +4,18 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="text-center py-6 text-sm text-gray-700">
+    <footer className="text-center py-6 text-sm text-gray-700 pb-20 md:pb-6">
       <div className="container mx-auto px-4">
         <p className="mb-1">&copy; 2025 Aratica. All rights reserved.</p>
         <p className="mb-0">
           <Link
-            href="/privacy-policy.html"
+            href="/privacy-policy"
             className="text-primary hover:underline mr-4"
           >
             Privacy Policy
           </Link>
           <Link
-            href="/terms-and-conditions.html"
+            href="/terms-and-conditions"
             className="text-primary hover:underline"
           >
             Terms &amp; Conditions

@@ -11,13 +11,13 @@ export default function ShareModal({ onClose }: { onClose: () => void }) {
         <h5 className="text-lg font-semibold mb-4">Share<span className="text-orange-500">.</span></h5>
         <div className="flex justify-center gap-6">
           <a href="#" target="_blank" title="LinkedIn">
-            <Image src="/linkedin.svg" alt="LinkedIn" width={12} height={12} className="bg-sky-800 p-1 rounded-lg" />
+            <Image src="/linkedin.svg" alt="LinkedIn" width={50} height={50} className="bg-sky-800 p-1 rounded-lg" />
           </a>
           <a href="#" target="_blank" title="Twitter (X)">
-            <Image src="/twitter.svg" alt="X" width={12} height={12} className="bg-gray-500 p-1 rounded-lg" />
+            <Image src="/twitter.svg" alt="X" width={50} height={50} className="bg-gray-500 p-1 rounded-lg" />
           </a>
           <a href="mailto:?subject=Check this out!" title="Email">
-            <Image src="/mail.svg" alt="Email" width={12} height={12} className="bg-cyan-700 p-1 rounded-lg" />
+            <Image src="/mail.svg" alt="Email" width={50} height={50} className="bg-cyan-700 p-1 rounded-lg" />
           </a>
         </div>
       </div>

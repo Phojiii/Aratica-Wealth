@@ -24,7 +24,9 @@ export default function ClientsSection() {
               key={index}
               src={client.src}
               alt={client.alt}
-              className="w-full max-w-[120px] rounded-md p-2.5 transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-md bg-[hsla(27,99%,49%,0.15)] hover:bg-[hsla(27,99%,49%,0.5)]"
+              width={120}
+              height={120}
+              className="rounded-md p-2.5 transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-md bg-[hsla(27,99%,49%,0.15)] hover:bg-[hsla(27,99%,49%,0.5)]"
             />
           ))}
         </div>
