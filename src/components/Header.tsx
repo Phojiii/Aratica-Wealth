@@ -27,7 +27,7 @@ export default function Header() {
       ];
     }
 
-    if (pathname.includes('/wealthmanagement')) {
+    if (pathname.includes('/')) {
       return [
         { href: '#services', label: 'Services' },
         { href: '#ourapproach', label: 'Our Approach' },
@@ -110,7 +110,7 @@ export default function Header() {
         <>
           <div className="bottom-bar hidden md:flex flex-wrap justify-center gap-4 text-white py-3 bg-black transition-all duration-300">
             {bottomNavLinks.map((item) => (
-              <a key={item.href} href={item.href} className="px-4 py-2 hover:text-orange-500 transition-all duration-300 ease-in-out">{item.label}</a>
+              <a key={item.href} href={item.href} className="px-4 py-2 rounded-sm hover:bg-gray-900 hover:text-orange-500 transition-colors duration-300">{item.label}</a>
             ))}
           </div>
 

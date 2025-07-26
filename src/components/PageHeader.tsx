@@ -14,7 +14,7 @@ export default function PageHeader({ pageTitle }: PageHeaderProps) {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="main-header text-white">
+    <header className="main-header sticky top-0 bg-black text-white shadow-md z-50 transition-all duration-300">
       <div className="top-bar flex justify-between items-center p-4 relative z-50 container m-auto">
         {/* Left Section */}
         <div className="left flex items-center gap-4">
