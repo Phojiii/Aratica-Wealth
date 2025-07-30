@@ -1,14 +1,15 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import Header from '@/components/Header';
 import ContactSection from '@/components/ContactSection';
 import SocialIcons from '@/components/SocialIcons';
 import Footer from '@/components/Footer';
+import type { NewsItem } from '@/types/news';
+
 
 export default function NewsAndMediaPage() {
-  const [news, setNews] = useState<any[]>([]);
+  const [news, setNews] = useState<NewsItem[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
