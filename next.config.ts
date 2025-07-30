@@ -5,3 +5,18 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+// next.config.js
+// next.config.js
+module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.moneycontrol.com',
+        pathname: '/**',
+      },
+    ],
+  },
+};
+

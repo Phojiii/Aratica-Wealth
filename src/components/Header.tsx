@@ -97,7 +97,7 @@ export default function Header() {
           <a href="#aboutus" onClick={toggleMenu}>About Us</a>
           <Link href="/loanandfunding" onClick={toggleMenu}>Loan & Funding</Link>
           <Link href="/investmentsolutions" onClick={toggleMenu}>Investment Solutions</Link>
-          <a href="#">News & Media</a>
+          <a href="/newsandmedia">News & Media</a>
           <a href="#contactus" onClick={toggleMenu}>Contact Us</a>
           <select name="language" className="bg-black text-white border border-white rounded px-2 mt-4">
             <option value="English">English</option>
