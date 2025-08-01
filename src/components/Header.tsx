@@ -52,7 +52,7 @@ export default function Header() {
   })();
 
   return (
-    <header className="main-header sticky top-0 bg-black text-white shadow-md z-50 transition-all duration-300">
+    <header className="main-header sticky top-0 bg-[url(/texture-repeat.jpg)] text-white shadow-md z-50 transition-all duration-300">
       <div className="top-bar flex justify-between items-center p-4 container mx-auto relative">
         <div className="left flex items-center gap-4 md:w-1/3 w-auto">
           <button id="menuToggle" onClick={toggleMenu}>
@@ -84,11 +84,11 @@ export default function Header() {
         </div>
       </div>
 
-      <hr className="border-gray-800" />
+      <hr className="border-[#333]" />
 
       {/* Slide-in Side Panel */}
-      <div className={`fixed top-0 left-0 h-full w-full md:w-md bg-black text-white transform transition-transform duration-300 z-[9999] shadow-lg ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-        <div className="flex justify-between items-center px-4 py-3 border-b border-white">
+      <div className={`fixed top-0 left-0 h-full w-full md:w-md  text-white transform transition-transform duration-300 z-[9999] shadow-lg ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className="flex justify-between items-center px-4 py-3 border-b border-b-[#333]">
           <h3 className="text-lg font-semibold">Menu</h3>
           <button onClick={toggleMenu} className="text-white text-2xl">&times;</button>
         </div>
@@ -108,7 +108,7 @@ export default function Header() {
 
       {bottomNavLinks.length > 0 && (
         <>
-          <div className="bottom-bar hidden md:flex flex-wrap justify-center gap-4 text-white py-3 bg-black transition-all duration-300">
+          <div className="bottom-bar hidden md:flex flex-wrap justify-center gap-4 text-white py-3 transition-all duration-300 border-b border-b-[#333]">
             {bottomNavLinks.map((item) => (
               <a key={item.href} href={item.href} className="px-4 py-2 rounded-sm hover:bg-gray-900 hover:text-orange-500 transition-colors duration-300">{item.label}</a>
             ))}

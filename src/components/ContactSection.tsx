@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function ContactSection() {
   return (
-    <section id="contactus" className="py-20">
+    <section id="contactus" className="py-20 border-t-[#333] border-t">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row gap-12 items-start">
         
         {/* Left Side - Contact Info */}
@@ -46,14 +46,32 @@ export default function ContactSection() {
 
         {/* Right Side - Contact Form */}
         <div className="lg:w-1/2 w-full  p-8 rounded-lg shadow-md">
-          <form action="#" method="POST" className="space-y-5">
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              required
-              className="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary"
-            />
+          <form
+            onSubmit={async (e) => {
+              e.preventDefault();
+              const form = e.currentTarget;
+              const formData = new FormData(form);
+
+              const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                  name: formData.get('name'),
+                  email: formData.get('email'),
+                  number: formData.get('number'),
+                  message: formData.get('message'),
+                }),
+              });
+
+              if (res.ok) {
+                alert('Message sent successfully!');
+                form.reset();
+              } else {
+                alert('Failed to send message.');
+              }
+            }}
+            className="space-y-5"
+          >
             <input
               type="email"
               name="email"
