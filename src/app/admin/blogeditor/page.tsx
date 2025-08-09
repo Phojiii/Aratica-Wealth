@@ -1,14 +1,25 @@
-
 'use client';
-import { useState } from 'react';
 
-const ADMIN_PASSWORD = 'SuperSecure123'; // hardcoded
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+
+const ADMIN_PASSWORD = 'SuperSecure123'; // Used here only for demo purpose
 
 export default function BlogEditorPage() {
-  const [password, setPassword] = useState('');
-  const [authenticated, setAuthenticated] = useState(false);
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
+  const [authenticated, setAuthenticated] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    // Simple check — look for session auth (for demo, we use localStorage)
+    const isAuth = localStorage.getItem('authenticated');
+    if (isAuth !== 'true') {
+      router.push('/adminlogin'); // Redirect if not logged in
+    } else {
+      setAuthenticated(true);
+    }
+  }, [router]);
 
   const handleSubmit = async () => {
     const res = await fetch('/api/blog/create', {
@@ -21,22 +32,7 @@ export default function BlogEditorPage() {
     alert(data.message);
   };
 
-  if (!authenticated) {
-    return (
-      <div className="p-10">
-        <h2>Enter Admin Password</h2>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="border p-2"
-        />
-        <button onClick={() => setAuthenticated(password === ADMIN_PASSWORD)} className="ml-2 bg-blue-500 px-4 py-2 text-white">
-          Login
-        </button>
-      </div>
-    );
-  }
+  if (!authenticated) return null; // Don't render form until auth check is complete
 
   return (
     <div className="p-10">

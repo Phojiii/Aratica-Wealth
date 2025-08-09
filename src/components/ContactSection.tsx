@@ -73,6 +73,13 @@ export default function ContactSection() {
             className="space-y-5"
           >
             <input
+              type="name"
+              name="name"
+              placeholder="Name"
+              required
+              className="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary"
+            />
+            <input
               type="email"
               name="email"
               placeholder="Email"
